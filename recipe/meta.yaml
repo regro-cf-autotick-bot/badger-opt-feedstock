@@ -1,6 +1,6 @@
 {% set name = "badger-opt" %}
 {% set version = "1.5.3" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 
 
 package:
@@ -32,7 +32,7 @@ requirements:
     - coolname
     - pillow
     - requests
-    - xopt >=2.6.11,<3.0.0
+    - xopt >=3.0.0
 
 test:
   imports:
