@@ -1,6 +1,6 @@
 {% set name = "badger-opt" %}
-{% set version = "1.5.1" %}
-{% set python_min = "3.10" %}
+{% set version = "1.5.3" %}
+{% set python_min = "3.11" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5e8bf646058f3bcf1ec77176445e0ea690506d2397fafbbc3f76cf98a320c7f4
+  sha256: 858a5254ef347f234ed3624e7b1b0d131550eb53309c31197e98d6821aa2c1b2
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - coolname
     - pillow
     - requests
-    - xopt >=2.6.11,<3.0.0
+    - xopt >=3.0.0
 
 test:
   imports:
